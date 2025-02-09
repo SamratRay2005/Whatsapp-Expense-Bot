@@ -14,9 +14,12 @@ WhatsApp Expense Bot is a chatbot built with [Rasa](https://rasa.com/) that lets
 
 To run the bot, open **three separate terminals** and execute the following commands:
 
-**Terminal 1:** Start the Rasa server with API enabled, CORS configured, and debugging information:
-
-```bash
+**Terminal 1 :- 
 rasa run --enable-api --cors "*" --debug
+
+
+**Terminal 2 :- 
 rasa run actions
+
+** Terminal 3 :- 
 ngrok http 5005
