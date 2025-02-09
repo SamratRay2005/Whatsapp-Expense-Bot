@@ -1,0 +1,8 @@
+# Ignore environment folder for Rasa
+rasa_env/
+
+# Ignore Rasa folder (e.g., for models, caches, etc.)
+.rasa/
+
+# Optionally, if you use a .env file for sensitive credentials, ignore it too:
+.env

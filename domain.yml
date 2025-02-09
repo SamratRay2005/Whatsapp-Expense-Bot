@@ -1,0 +1,34 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - confirm_whatsapp
+  - add_expense
+  - query_expense
+
+responses:
+  utter_greet:
+    - text: "Hey there! How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_confirm_whatsapp:
+    - text: "WhatsApp is set up and working perfectly!"
+  # Placeholder responses. For expense logging and query, custom actions will generate dynamic responses.
+  utter_add_expense:
+    - text: "Your expense has been recorded."
+  utter_query_expense:
+    - text: "Here is the summary of your expenses."
+
+actions:
+  - action_add_expense
+  - action_query_expense
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,10 @@
+source rasa_env/bin/activate
+rasa train
+
+https://0290-2409-40e3-19-12fb-40f-bda6-b26f-f2d6.ngrok-free.app
+https://0290-2409-40e3-19-12fb-40f-bda6-b26f-f2d6.ngrok-free.app/webhooks/twilio/webhook
+
+rasa run --enable-api --cors "*" --debug
+rasa run actions
+ngrok http 5005
+

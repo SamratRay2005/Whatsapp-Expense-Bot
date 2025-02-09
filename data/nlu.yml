@@ -1,0 +1,138 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - what's up
+    - hi there
+    - good afternoon
+    - yo
+    - hiya
+    - howdy
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - see ya
+    - catch you later
+    - bye bye
+    - talk to you soon
+    - later
+    - take care
+    - adios
+
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - sure
+    - absolutely
+    - definitely
+    - of course
+    - that's right
+    - correct
+    - indeed
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nah
+    - not at all
+    - I don't think so
+    - don't agree
+    - absolutely not
+    - negative
+
+- intent: mood_great
+  examples: |
+    - I'm feeling great
+    - I'm awesome
+    - fantastic
+    - amazing
+    - everything is perfect
+    - I am in a great mood
+    - couldn't be better
+    - I'm on top of the world
+    - superb
+    - feeling wonderful
+
+- intent: mood_unhappy
+  examples: |
+    - I'm feeling down
+    - not so good today
+    - I'm depressed
+    - I'm unhappy
+    - I've had a rough day
+    - feeling sad
+    - very disappointed
+    - miserable
+    - not feeling well
+    - really low
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you human?
+    - am I talking to a robot?
+    - is this a bot?
+    - are you real?
+    - can I trust you're not a machine?
+
+- intent: confirm_whatsapp
+  examples: |
+    - is WhatsApp set up?
+    - confirm WhatsApp integration
+    - is my WhatsApp working?
+    - WhatsApp is set up?
+    - tell me if WhatsApp is working
+    - can you confirm WhatsApp integration?
+
+- intent: add_expense
+  examples: |
+    - I spent [300](amount) on cake.
+    - I spent [50](amount) rupees on a filter coffee at a local café.
+    - Spent [400](amount) on a cappuccino at Starbucks.
+    - Bought a cold coffee from CCD for [180](amount).
+    - [120](amount) for a cutting chai at a roadside stall.
+    - Dinner at a fine dining restaurant, cost [1800](amount).
+    - Took an Ola to work, cost [250](amount).
+    - Bought snacks from Blinkit for [300](amount) yesterday.
+    - Ordered biryani from Swiggy for [500](amount).
+    - Groceries from Zepto, cost [1000](amount).
+    - Paid [1500](amount) for a new pair of jeans from Levi's.
+    - Took an Uber to the airport, cost [600](amount).
+    - Booked a train ticket for my trip, cost [1200](amount).
+
+
+- intent: query_expense
+  examples: |
+    - show me my expenses
+    - how much have I spent today?
+    - give me an expense summary
+    - what did I spend on food?
+    - summarize my expenses for this week
+    - tell me my total expenses
+    - can you show my expense details?
+    - list all my expenses
+    - what are my expenses so far?
+    - report my expenses
+    - I'd like to see my expense report.
+    - summarize my spending.
+    - How much have I spent on coffee?
+    - What is my total food expenditure?
+    - What is my total expense so far?
+    - How much did I spend on groceries?
+    - How much did I spend on online food ordering?
+    - What are my expenses from yesterday?
+    - What is my total expense on travel?

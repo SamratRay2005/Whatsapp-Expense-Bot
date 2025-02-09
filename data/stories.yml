@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+- story: greet and add expense
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: add_expense
+    - action: action_add_expense
+
+- story: log an expense
+  steps:
+    - intent: add_expense
+    - action: action_add_expense
+
+- story: query expense summary
+  steps:
+    - intent: query_expense
+    - action: action_query_expense
+
+- story: confirm WhatsApp integration
+  steps:
+    - intent: confirm_whatsapp
+    - action: utter_confirm_whatsapp
+
+- story: goodbye conversation
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: simple conversation with expense addition and query
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: add_expense
+    - action: action_add_expense
+    - intent: query_expense
+    - action: action_query_expense
+
