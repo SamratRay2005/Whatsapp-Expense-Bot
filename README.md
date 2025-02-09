@@ -10,19 +10,13 @@ WhatsApp Expense Bot is a chatbot built with [Rasa](https://rasa.com/) that lets
 - **Secure Credential Management:** Sensitive details (e.g., API keys) are managed via environment variables.
 - **Built on Rasa:** Leverages Rasa’s NLU and dialogue management to create a robust conversational agent.
 
-## Table of Contents
+## How to Run
 
-- [Installation](#installation)
-- [Setup](#setup)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+To run the bot, open **three separate terminals** and execute the following commands:
 
-## Installation
+**Terminal 1:** Start the Rasa server with API enabled, CORS configured, and debugging information:
 
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/SamratRay2005/Whatsapp-Expense-Bot.git
-   cd Whatsapp-Expense-Bot
+```bash
+rasa run --enable-api --cors "*" --debug
+rasa run actions
+ngrok http 5005
